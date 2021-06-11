@@ -45,11 +45,9 @@ a:hover {
 }
 
 .flex-nav li {
-flex-basis: 2;
 min-width: 10%
-
 }
-.social {flex-basis: 1;}
+
 
 .wrapper {
   width: 90vw;
@@ -61,21 +59,24 @@ min-width: 10%
 
 @media all and (max-width:1000px) {
 
-.flex-nav li { min-width: 50%;
+  .social {
+    flex: 1 ;
   }
-.social { 
-  
-}
+.flex-nav li { width: 50%;
+  }
+
   
 }
 
 @media all and (max-width:500px) {
-.flex-nav li { 
-  min-width: 100%;
+  .social {
+    flex: 1 ;
+    }
+
+  .flex-nav li { 
+  width: 100%;
 
 }
-.social {
 
-}
 
 }
